@@ -46,7 +46,7 @@ def careers():
 
 if __name__ == "__main__":
     app.run(
-        host="localhost",
-        port=8000,
+        host=os.environ("IP", "0.0.0.0"),
+        port=os.environ("PORT", "5000"),
         debug=False
     )
